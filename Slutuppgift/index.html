@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pontus Wallgren</title>
+
+    <link rel="stylesheet" href="Styles/style.css" />
+
+    <script language="javascript">
+      var popupWindow = null;
+      function centeredPopup(url, winName, w, h, scroll) {
+        LeftPosition = screen.width ? (screen.width - w) / 2 : 0;
+        TopPosition = screen.height ? (screen.height - h) / 2 : 0;
+        settings =
+          "height=" +
+          h +
+          ",width=" +
+          w +
+          ",top=" +
+          TopPosition +
+          ",left=" +
+          LeftPosition +
+          ",scrollbars=" +
+          scroll +
+          ",resizable";
+        popupWindow = window.open(url, winName, settings);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Pontus Wallgren</h1>
+
+    <br />
+    <br />
+
+    <div class="flex-container">
+      <h2>
+        Welcome! <br />Pontus Wallgren is a Swedish songwriter and musician that
+        records and produces his own music. In the early 2000’s he started the
+        bands Douglas Heart and Afraid of Stairs (both on Labrador Records) and
+        joined Franke (Service). He's also mixed EP's for the Gothenburg band
+        Vega and done remixes for Bolywool and Palm Haze.
+      </h2>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="content">
+      <div class="flex-container">
+        <div class="flex-item">
+          <a href="music.html"
+            ><img
+              src="resources/images/Disco.jpg"
+              alt="A collection of vinyl records"
+              class="img"
+          /></a>
+
+          <a href="music.html" style="color: black" ;
+            ><p class="p2">Discography</p></a
+          >
+        </div>
+
+        <div class="flex-item">
+          <a
+            href="https://pontuswallgren.bandcamp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="resources/images/Shop.jpg"
+              alt="Woman scrolling through vinyl records in a shop"
+              class="img"
+          /></a>
+
+          <a
+            href="https://pontuswallgren.bandcamp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="color: black"
+            ;
+            ><p class="p2">Shop</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <footer class="flex-container-footer">
+      <div class="flex-item">
+        <a href="index.html" style="color: black" class="menu">Home</a>
+      </div>
+
+      <div class="flex-item">
+        <a href="music.html" style="color: black" class="menu">Discography</a>
+      </div>
+
+      <div class="flex-item">
+        <a
+          href="https://pontuswallgren.bandcamp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="menu"
+          style="color: black"
+          >Shop</a
+        >
+      </div>
+
+      <div class="flex-item">
+        <a
+          href="mailinglist.html"
+          style="color: black"
+          class="menu"
+          onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false"
+          >Join the Mailing List</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

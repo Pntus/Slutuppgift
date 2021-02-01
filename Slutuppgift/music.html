@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Music</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <script language="javascript">
+      var popupWindow = null;
+      function centeredPopup(url, winName, w, h, scroll) {
+        LeftPosition = screen.width ? (screen.width - w) / 2 : 0;
+        TopPosition = screen.height ? (screen.height - h) / 2 : 0;
+        settings =
+          "height=" +
+          h +
+          ",width=" +
+          w +
+          ",top=" +
+          TopPosition +
+          ",left=" +
+          LeftPosition +
+          ",scrollbars=" +
+          scroll +
+          ",resizable";
+        popupWindow = window.open(url, winName, settings);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Discography</h1>
+
+    <br />
+
+    <div class="content">
+      <div class="flex-container">
+        <div class="flex-item">
+          <a
+            href="https://soundcloud.com/pontuswallgren/dronenall-gleeson"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="resources/images/Dronenall Gleeson.jpg"
+              alt="Photo of a ballerina"
+              class="img2"
+          /></a>
+
+          <a
+            href="https://soundcloud.com/pontuswallgren/dronenall-gleeson"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="color: black"
+            ;
+            ><p class="p">Dronehall Gleeson</p></a
+          >
+        </div>
+
+        <div class="flex-item">
+          <a
+            href="https://soundcloud.com/pontuswallgren/odessa-turnaround"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="resources/images/Odessa Turnaround.jpg"
+              alt="Painting of two birds sitting on a branch"
+              class="img2"
+          /></a>
+
+          <a
+            href="https://soundcloud.com/pontuswallgren/odessa-turnaround"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="color: black"
+            ;
+            ><p class="p">Odessa Turnaround</p></a
+          >
+        </div>
+
+        <div class="flex-item">
+          <a
+            href="https://soundcloud.com/pontuswallgren/youve-got-to-keep-moving-on"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="resources/images/You Got to Keep Moving On.jpg"
+              alt="Text artwork of song title"
+              class="img2"
+          /></a>
+
+          <a
+            href="https://soundcloud.com/pontuswallgren/youve-got-to-keep-moving-on"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="color: black"
+            ;
+            ><p class="p">You've Got To Keep Moving On</p></a
+          >
+        </div>
+
+        <div class="flex-item">
+          <a
+            href="https://soundcloud.com/pontuswallgren/grangemouth-interlude"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="resources/images/Grangemouth cover.JPEG"
+              alt="Raindrops on window"
+              class="img2"
+          /></a>
+
+          <a
+            href="https://soundcloud.com/pontuswallgren/grangemouth-interlude"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="color: black"
+            ;
+            ><p class="p">Grangemouth Interlude</p></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <footer class="flex-container-footer">
+      <div class="flex-item">
+        <a href="index.html" style="color: black" class="menu">Home</a>
+      </div>
+
+      <div class="flex-item">
+        <a href="music.html" style="color: black" class="menu">Discography</a>
+      </div>
+
+      <div class="flex-item">
+        <a
+          href="https://pontuswallgren.bandcamp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="menu"
+          style="color: black"
+          >Shop</a
+        >
+      </div>
+
+      <div class="flex-item">
+        <a
+          href="mailinglist.html"
+          style="color: black"
+          class="menu"
+          onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false"
+          >Join the Mailing List</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
